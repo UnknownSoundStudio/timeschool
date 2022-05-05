@@ -9,7 +9,7 @@ function a() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://han.gl/pwifo";
+      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
       break;   
     default:
       
@@ -28,7 +28,7 @@ function b() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://han.gl/pwifo";
+      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
       break;   
     default:
       
@@ -47,7 +47,7 @@ function c() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://han.gl/pwifo";
+      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
       break;   
     default:
       
@@ -67,7 +67,7 @@ function d() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://han.gl/pwifo";
+      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
       break;   
     default:
       
@@ -105,7 +105,7 @@ function f() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://han.gl/pwifo";
+      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
       break;   
     default:
       
@@ -127,23 +127,23 @@ function ss() //탐구 A/B/C: 과목마다 다름
         switch (value) {
        
           case "a":
-            location.href = "https://han.gl/pwifo";
+            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
             break;
 
           case "b":
-            location.href = "https://han.gl/pwifo";
+            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
             break;
 
           case "c":
-            location.href = "https://han.gl/pwifo";
+            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
             break;
 
           case "d":
-            location.href = "https://han.gl/pwifo";
+            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
             break;
 
           case "e":
-            location.href = "https://han.gl/pwifo";
+            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
             break;
        
           default:
