@@ -1,0 +1,159 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="3-3 시간표">
+<link rel="apple-touch-icon" sizes="57x57" href="http://taek-2.github.io/timetable/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://taek-2.github.io/timetable/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://taek-2.github.io/timetable/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://taek-2.github.io/timetable/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://taek-2.github.io/timetable/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://taek-2.github.io/timetable/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://taek-2.github.io/timetable/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://taek-2.github.io/timetable/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://taek-2.github.io/timetable/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="http://taek-2.github.io/timetable/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://taek-2.github.io/timetable/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="http://taek-2.github.io/timetable/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://taek-2.github.io/timetable/icons/favicon-16x16.png">
+<link rel="manifest" href="http://taek-2.github.io/timetable/icons/manifest.json">
+<link rel="icon" href="http://taek-2.github.io/timetable/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="http://taek-2.github.io/timetable/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+ th, td {vertical-align:middle;}
+ p{font-family: 'Do Hyeon', sans-serif; font-size:2em; text-align: center;}
+ button{font-family: 'Do Hyeon', sans-serif; font-size:5em; text-align: center;}
+h1{font-family: 'Do hyeon', sans-serif; text-align: center; font-size:3em; padding-top: 0.5em;}
+tr,td{border: 1px solid #444444; border-collapse: collapse; text-align: center; padding: 0.5em 0.3em 0.5em 0.3em;}
+
+  tbody tr:nth-child(2n) { background-color: #EAEAEA;}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+}
+.swal2-popup {
+font-size: 2rem;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    
+    
+
+<h1>3-3 시간표</h1>
+
+
+<table style="border: 1px solid #444444; border-collapse: collapse; margin-left: auto; margin-right: auto;"> <tbody>
+
+<tr>
+<td><p>시간/요일</p></td>
+<td><p>월</p></td>
+<td><p>화</p></td>
+<td><p>수</p></td>
+<td><p>목</p></td>
+<td><p>금</p></td>
+</tr>
+
+<!-- #진로 a -->
+<!-- #수학 b -->
+<!-- #영어 c -->
+<!-- #체육 d -->
+<!-- #국어 e -->
+<!-- #창체 f -->
+
+<tr>
+<td><p>1</p></td>
+<td onclick="a()"><p>진로</p></td>
+<td onclick="ss()"><p>게임 프로그래밍</p></td>
+<td onclick="b()"><p>수학</p></td>
+<td onclick="ss()"><p>자료 구조</p></td>
+<td onclick="d()"><p>체육</p></td>
+</tr>
+
+<tr>
+<td><p>2</p></td>
+<td onclick="b()"><p>수학</p></td>
+<td onclick="ss()"><p>게임 프로그래밍</p></td>
+<td onclick="ss()" ><p>빅 데이터</p></td>
+<td onclick="ss()" ><p>자료 구조</p></td>
+<td onclick="e()"><p>국어</p></td>
+</tr>
+
+<tr>
+<td><p>3</p></td>
+<td onclick="ss()" ><p>응용 프로그래밍 (실습)</p></td>
+<td onclick="c()"><p>영어</p></td>
+<td onclick="ss()"><p>스마트 앱 개발</p></td>
+<td onclick="ss()"><p>자료 구조</p></td>
+<td onclick="ss()"><p>게임 프로그래밍</p></td>
+</tr>
+
+<tr>
+<td><p>4</p></td>
+<td onclick="ss()"><p>응용 프로그래밍 (실습)</p></td>
+<td onclick="ss()"><p>스마트 앱 개발</p></td>
+<td onclick="ss()"><p>스마트 앱 개발</p></td>
+<td onclick="c()"><p>영어</p></td>
+<td onclick="ss()"><p>게임 프로그래밍</p></td>
+</tr>
+
+<tr>
+<td><p>5</p></td>
+<td onclick="ss()" ><p>응용 프로그래밍 (이론)</p></td>
+<td onclick="ss()"><p>빅 데이터</p></td>
+<td onclick="ss()"><p>응용 프로그래밍</p></td>
+<td onclick="ss()" ><p>스마트 앱 개발</p></td>
+<td onclick="f()"><p>창체</p></td>
+</tr>
+
+<tr>
+<td><p>6</p></td>
+<td onclick="ss()" ><p>빅데이터</p></td>
+<td onclick="ss()" ><p>빅 데이터</p></td>
+<td onclick="ss()"><p>응용 프로그래밍</p></td>
+<td onclick="ss()" ><p>스마트 앱 개발</p></td>
+<td onclick="f()"><p>창체</p></td>
+</tr>
+
+<tr>
+<td><p>7</p></td>
+<td onclick="ss()"><p>빅데이터</p></td>
+<td onclick="e()"><p>국어</p></td>
+<td><p>&nbsp;</p></td>
+<td onclick="ss()"><p>게임 프로그래밍 (이론)</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+
+</tbody>
+</table>
+<p style="font-size:1em;" onclick="window.location.href='https://응-개발중이야/pc'"><U>피드백</U></p>
+<p>만든사람: 30305 박상현</p>
+
+	
+<script type="text/javascript" src="redirect.js"></script> 
+<head>
+  <style>
+  body
+  {
+  background-image:url('https://colorate.azurewebsites.net/SwatchColor/E2E2E2');
+  background-color: #D9E5FF;
+  }
+  </style>
+  </head>
+</body>
+  </html>
