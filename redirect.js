@@ -1,5 +1,12 @@
-function a() //음악연주: Zoom만 시행하는 과목
-{swal("자세한 기능은 추후 개발예정","","success",{
+//진로 a
+//수학 b
+//영어 c
+//체육 d
+//국어 e
+//창체 f
+
+function a() //진로 a
+{swal("OK버튼을 누르시면 자세한 정보를 출력합니다.","","success",{
   buttons: {
     cancel: "취소",
     OK: true,
@@ -9,7 +16,7 @@ function a() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+      location.href = "https://schooltime.quv.kr/";
       break;   
     default:
       
@@ -17,8 +24,8 @@ function a() //음악연주: Zoom만 시행하는 과목
 });
 }
 
-function b() //음악연주: Zoom만 시행하는 과목
-{swal("자세한 기능은 추후 개발예정","","success",{
+function b() //수학 b
+{swal("OK버튼을 누르시면 자세한 정보를 출력합니다.","","success",{
   buttons: {
     cancel: "취소",
     OK: true,
@@ -28,7 +35,7 @@ function b() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+      location.href = "https://schooltime.quv.kr/";
       break;   
     default:
       
@@ -36,8 +43,8 @@ function b() //음악연주: Zoom만 시행하는 과목
 });
 }
 
-function c() //음악연주: Zoom만 시행하는 과목
-{swal("자세한 기능은 추후 개발예정","","success",{
+function c() //영어 c
+{swal("OK버튼을 누르시면 자세한 정보를 출력합니다.","","success",{
   buttons: {
     cancel: "취소",
     OK: true,
@@ -47,7 +54,7 @@ function c() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+      location.href = "https://schooltime.quv.kr/";
       break;   
     default:
       
@@ -56,8 +63,8 @@ function c() //음악연주: Zoom만 시행하는 과목
 }
 
 
-function d() //음악연주: Zoom만 시행하는 과목
-{swal("자세한 기능은 추후 개발예정","","success",{
+function d() //체육 d
+{swal("OK버튼을 누르시면 자세한 정보를 출력합니다.","","success",{
   buttons: {
     cancel: "취소",
     OK: true,
@@ -67,7 +74,7 @@ function d() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+      location.href = "https://schooltime.quv.kr/";
       break;   
     default:
       
@@ -75,8 +82,8 @@ function d() //음악연주: Zoom만 시행하는 과목
 });
 }
 
-function e() //음악연주: Zoom만 시행하는 과목
-{swal("자세한 기능은 추후 개발예정","","success",{
+function e() //국어 e
+{swal("OK버튼을 누르시면 자세한 정보를 출력합니다.","","success",{
   buttons: {
     cancel: "취소",
     OK: true,
@@ -86,7 +93,7 @@ function e() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://han.gl/pwifo";
+      location.href = "https://schooltime.quv.kr/";
       break;   
     default:
       
@@ -94,8 +101,8 @@ function e() //음악연주: Zoom만 시행하는 과목
 });
 }
 
-function f() //음악연주: Zoom만 시행하는 과목
-{swal("자세한 기능은 추후 개발예정","","success",{
+function f() //창체 f
+{swal("OK버튼을 누르시면 자세한 정보를 출력합니다.","","success",{
   buttons: {
     cancel: "취소",
     OK: true,
@@ -105,7 +112,7 @@ function f() //음악연주: Zoom만 시행하는 과목
   switch (value) {
  
     case "OK":
-      location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+      location.href = "https://schooltime.quv.kr/";
       break;   
     default:
       
@@ -113,7 +120,7 @@ function f() //음악연주: Zoom만 시행하는 과목
 });
 }
 function ss() //탐구 A/B/C: 과목마다 다름
-    {swal("자세한 기능은 추후 개발예정","","info",{
+    {swal("해당 실습버튼을 누르시면 자세한 정보를 출력합니다.","","info",{
         buttons: {
           cancel: "취소",
           a: { text: "응용 프로그래밍",},
@@ -127,23 +134,23 @@ function ss() //탐구 A/B/C: 과목마다 다름
         switch (value) {
        
           case "a":
-            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+            location.href = "https://schooltime.quv.kr/";
             break;
 
           case "b":
-            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+            location.href = "https://schooltime.quv.kr/";
             break;
 
           case "c":
-            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+            location.href = "https://schooltime.quv.kr/";
             break;
 
           case "d":
-            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+            location.href = "https://schooltime.quv.kr/";
             break;
 
           case "e":
-            location.href = "https://unknownsoundstudio.github.io/timeschool/loading";
+            location.href = "https://schooltime.quv.kr/";
             break;
        
           default:
