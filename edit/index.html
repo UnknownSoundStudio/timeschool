@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta name="google-signin-client_id" content="773936108389-p8id2k4v6231i7r2msl2me661g1hk9qg.apps.googleusercontent.com">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인천정보과학고등학교 시간표</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+  <div class="alt r3 shadow ani" id="Err">
+    <img src="/warn.svg"><h5 class="ce f2 b4" id="Err_Co">Error Code</h5>
+  </div>
+<div class="Return ce r1">
+  돌아가기
+</div>
+<h1>시간표 수정</h1>
+<h5 style="color: rgb(80, 80, 80);" class="f2 b2">시간표를 수정하세요.</h5>
+<hr>
+<h5 style="margin-bottom:10px;" class="b4 f1 ce">수정후 반드시 아래 저장버튼을 눌러주세요.</h5>
+<select class="sel ce r1" id="Nth" onchange="handleOnChange(this)">
+  <option value="1">월요일</option>
+  <option value="2">화요일</option>
+  <option value="3">수요일</option>
+  <option value="4">목요일</option>
+  <option value="5">금요일</option>
+</select><br>
+
+
+<div class="class_B r1">
+  <label>1교시</label>
+  <input autocomplete=”nope” class="r1 ce Rea" id="N1" placeholder="과목 명을 입력하세요. ex) 수학(이청록)"><br>
+  <div class="recommend r1 shadow blur">
+    <h5 class="b1 f1 ce">검색결과 끝.</h5>
+  </div>
+  <input autocomplete=”nope” class="r1 ce" id="L1" placeholder="Zoom또는 Meet초대 링크를 입력해 주세요.">
+</div>
+
+<div class="class_B r1">
+  <label>2교시</label>
+  <input autocomplete=”nope” class="r1 ce Rea" id="N2" placeholder="과목 명을 입력하세요. ex) 수학(이청록)"><br>
+  <div class="recommend r1 shadow blur">
+    <h5 class="b1 f1 ce">검색결과 끝.</h5>
+  </div>  <input autocomplete=”nope” class="r1 ce" id="L2" placeholder="Zoom또는 Meet초대 링크를 입력해 주세요.">
+</div>
+
+<div class="class_B r1">
+  <label>3교시</label>
+  <input autocomplete=”nope” class="r1 ce Rea" id="N3" placeholder="과목 명을 입력하세요. ex) 수학(이청록)"><br>
+  <div class="recommend r1 shadow blur">
+    <h5 class="b1 f1 ce">검색결과 끝.</h5>
+  </div>  <input autocomplete=”nope” class="r1 ce" id="L3" placeholder="Zoom또는 Meet초대 링크를 입력해 주세요.">
+</div>
+
+<div class="class_B r1">
+  <label>4교시</label>
+  <input autocomplete=”nope” class="r1 ce Rea" id="N4" placeholder="과목 명을 입력하세요. ex) 수학(이청록)"><br>
+  <div class="recommend r1 shadow blur">
+    <h5 class="b1 f1 ce">검색결과 끝.</h5>
+  </div>  <input autocomplete=”nope” class="r1 ce" id="L4" placeholder="Zoom또는 Meet초대 링크를 입력해 주세요.">
+</div>
+
+<div class="class_B r1">
+  <label>5교시</label>
+  <input autocomplete=”nope” class="r1 ce Rea" id="N5" placeholder="과목 명을 입력하세요. ex) 수학(이청록)"><br>
+  <div class="recommend r1 shadow blur">
+    <h5 class="b1 f1 ce">검색결과 끝.</h5>
+  </div>  <input autocomplete=”nope” class="r1 ce" id="L5" placeholder="Zoom또는 Meet초대 링크를 입력해 주세요.">
+</div>
+
+<div class="class_B r1">
+  <label>6교시</label>
+  <input autocomplete=”nope” class="r1 ce Rea" id="N6" placeholder="과목 명을 입력하세요. ex) 수학(이청록)"><br>
+  <div class="recommend r1 shadow blur">
+    <h5 class="b1 f1 ce">검색결과 끝.</h5>
+  </div>  <input autocomplete=”nope” class="r1 ce" id="L6" placeholder="Zoom또는 Meet초대 링크를 입력해 주세요.">
+</div>
+
+<div class="class_B r1">
+  <label>7교시</label>
+  <input autocomplete=”nope” class="r1 ce Rea" id="N7" placeholder="과목 명을 입력하세요. ex) 수학(이청록)"><br>
+  <div class="recommend r1 shadow blur">
+    <h5 class="b1 f1 ce">검색결과 끝.</h5>
+  </div>  <input autocomplete=”nope” class="r1 ce" id="L7" placeholder="Zoom또는 Meet초대 링크를 입력해 주세요.">
+</div>
+
+
+<button class="Btn r1" id="Btn">저장</button><br><br>
+<h1 style="color:rgb(47, 47, 47); line-height:20px;" class="ce f2">Designed by<br><span class="b1" style="color:rgb(96, 96, 96);">ㅈㅁㄱ</span></h1>
+
+</body>
+
+<!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "840627dd-e957-4ee7-9bb6-d69038335be4"
+  });
+</script>
+<!-- End Channel Plugin -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBVJmU-2OvTJwn4g_mQp21pNFvP_9QA1fs",
+    authDomain: "dshs-c357f.firebaseapp.com",
+    projectId: "dshs-c357f",
+    storageBucket: "dshs-c357f.appspot.com",
+    messagingSenderId: "36303586789",
+    appId: "1:36303586789:web:0f90620c7eae0993d09b0c",
+    measurementId: "G-HX1L0D57YW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+  firebase.analytics();
+</script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/firebase.js"></script>
+<script type="text/javascript" src="/script.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

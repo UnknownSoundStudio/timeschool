@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta name="google-signin-client_id" content="773936108389-p8id2k4v6231i7r2msl2me661g1hk9qg.apps.googleusercontent.com">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인천정보과학고등학교 시간표</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+  <div class="alt r3 shadow ani" id="Err">
+    <img src="warn.svg"><h5 class="ce f2 b4" id="Err_Co">Error Code</h5>
+  </div>
+
+  <div class="login-back blur">
+    <div class="Login r1 shadow">
+      <img src="https://st4.depositphotos.com/1679906/25409/v/600/depositphotos_254099918-stock-illustration-colorful-geometric-landing-page-background.jpg">
+      <div class="lo-le">
+        <h1>로그인</h1>
+        <p class="b1">인천정보과학고등학교 시간표 프로그램입니다.</p>
+      </div>
+      <div class="lo-ri">
+        <div class="frame rf shadow">
+          <img src="login.png" height="90px;">
+        </div><br><br><br><br><br><br><br>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      </div>
+    </div>
+  </div>
+
+  <h1>인천정보과학고등학교</h1>
+  <h4 class="f4 b1" style="margin-top:-10px;">시간표 프로그램</h4>
+  <hr class="r2">
+  <img src="" class="cur profile rf" id="pro">
+
+  <div class="menu r1 ce">
+    <h3 class="b2 cur" id="Logout">로그아웃</h3>
+    <hr style="margin: 1px 0px; height:1px;">
+    <h3 class="b2 cur" id="Edit">수정</h3>
+  </div>
+
+  <div class="dash r1 ani shadow">
+    <div class="img-dash"></div>
+    <div class="text">
+      <h1 class="dash-t">시간정보 로딩중</h1>
+      <h4 class="tiv b1" id="Nti">Nan</h4>
+
+
+      <div class="swi">
+        <label class="switch">
+          <input type="checkbox" id="Btn" checked='true'>
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+
+    </div>
+  </div>
+
+  <span id="sel">
+    <div class="box r1 cur ani" id="L1">
+      <h3 class="name b2"><b>1 </b><span id="Or1"></span></h3>
+      <h3 class="ri enter b1 f2">입장하기 ></h3>
+    </div>
+
+    <div class="box r1 cur ani" id="L2">
+      <h3 class="name b2"><b>2 </b><span id="Or2"></span></h3>
+      <h3 class="ri enter b1 f2">입장하기 ></h3>
+    </div>
+
+    <div class="box r1 cur ani" id="L3">
+      <h3 class="name b2"><b>3 </b><span id="Or3"></span></h3>
+      <h3 class="ri enter b1 f2">입장하기 ></h3>
+    </div>
+
+    <div class="box r1 cur ani" id="L4">
+      <h3 class="name b2"><b>4 </b><span id="Or4"></span></h3>
+      <h3 class="ri enter b1 f2">입장하기 ></h3>
+    </div>
+
+    <div class="box r1 ani" style="background-color:rgb(85, 85, 85);">
+      <h3 class="b5 ce">점심시간</h3>
+      </h3>
+    </div>
+    <div class="box r1 cur ani" id="L5">
+      <h3 class="name b2"><b>5 </b><span id="Or5"></span></h3>
+      <h3 class="ri enter b1 f2">입장하기 ></h3>
+    </div>
+    <div class="box r1 cur ani" id="L6">
+      <h3 class="name b2"><b>6 </b><span id="Or6"></span></h3>
+      <h3 class="ri enter b1 f2">입장하기 ></h3>
+    </div>
+    <div class="box r1 cur ani" id="L7">
+      <h3 class="name b2"><b>7 </b><span id="Or7"></span></h3>
+      <h3 class="ri enter b1 f2">입장하기 ></h3>
+    </div>
+  </span>
+
+  <h1 style="color:rgb(47, 47, 47); line-height:20px;" class="ce f2">Designed by<br><span class="b1" style="color:rgb(96, 96, 96);">ㅈㅁㄱ</span></h1>
+<br><br>
+      <div class="box r1 ani" style="background-color:rgb(85, 85, 85); cursor:pointer;" onclick="popup_test()">
+        <h5 class="b5 ce">제대로 창이 열리지 않는다면, 팝업이 차단되어있는지 확이해 주세요.</h5>
+        </h3>
+      </div>
+
+</body>
+
+<!-- Channel Plugin Scripts -->
+<script>
+
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "840627dd-e957-4ee7-9bb6-d69038335be4"
+  });
+</script>
+<!-- End Channel Plugin -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCHybX0ceVCFb-KZZwWI_oNIxuo4aPjcPk",
+    authDomain: "schooltime-61537.firebaseapp.com",
+    projectId: "schooltime-61537",
+    storageBucket: "schooltime-61537.appspot.com",
+    messagingSenderId: "440663771197",
+    appId: "1:440663771197:web:24f7821cb7b64de4568254",
+    measurementId: "G-MXHZMK4HQ5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+  firebase.analytics();
+</script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="firebase.js"></script>
+
+</html>
