@@ -14,24 +14,61 @@
     <img src="warn.svg"><h5 class="ce f2 b4" id="Err_Co">Error Code</h5>
   </div>
 
+  <style>
+    body
+    {
+    background-image:url('tree.png');
+    background-color: #8f7eb8;
+    }
+    </style>
 
   <h1>인천정보과학고등학교</h1>
   <h4 class="f4 b1" style="margin-top:-10px;">시간표 프로그램</h4>
+  <h3>오늘,내일,내일모레,그 다음날.... 하여튼 날씨를 알고싶다면  <a href="https://unknownsoundstudio.github.io/weather/" target='_blank' style="color: rgb(0, 89, 255)">여기</a> 클릭!</h3>
   <hr class="r2">
 
-  <div class="dash r1 ani shadow">
-    <div class="img-dash"></div>
-    <div class="text">
-      <h1 class="dash-t">시간정보 로딩중</h1>
-      <h4 class="tiv b1" id="Nti">Nan</h4>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #divClock{
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+      }
+    </style>
+    <script type="text/javascript">
+      function showClock(){
+        var currentDate = new Date();
+        var divClock = document.getElementById('divClock');
+        var msg = "현재 시간 : ";
+        if(currentDate.getHours()>12){      //시간이 12보다 크다면 오후 아니면 오전
+          msg += "오후 ";
+          msg += currentDate.getHours()-12+"시 ";
+       }
+       else {
+         msg += "오전 ";
+         msg += currentDate.getHours()+"시 ";
+       }
+ 
+        msg += currentDate.getMinutes()+"분 ";
+        msg += currentDate.getSeconds()+"초";
+ 
+        divClock.innerText = msg;
+ 
+        if (currentDate.getMinutes()>58) {    //정각 1분전부터 빨강색으로 출력
+          divClock.style.color="red";
+        }
+        setTimeout(showClock,1000);  //1초마다 갱신
+      }
+    </script>
+  </head>
+  <body onload="showClock()">
+    <div id="divClock" class="clock">
+ 
+    </div>
+  </body>
 
 
-      <div class="swi">
-        <label class="switch">
-          <input type="checkbox" id="Btn" checked='true'>
-          <span class="slider round"></span>
-        </label>
-      </div>
 
 
     </div>
@@ -43,6 +80,7 @@
    th, td {vertical-align:middle;}
    button{font-family: 'Do Hyeon', sans-serif; font-size:5em; text-align: center;}
   h1{text-align: center;}
+  h4{text-align: center;}
   tr,td{border: 1px solid #444444; border-collapse: collapse; padding: 0.5em 0.3em 0.5em 0.3em;}
   
 
@@ -206,16 +244,59 @@
 
 
 
+  <div>IP 주소: <span id="client-ip"></span> 로 접속중입니다.</div>
 
+  <script>
+    // HTML의 <script> 요소를 생성한다
+    const se = document.createElement('script');
+    // <script> 요소의 src 속성을 설정한다
+    se.src = 'https://ipinfo.io?callback=callback';
+    // <body> 요소의 하위 끝에 붙인다
+    // 그리고 콜백 함수를 호출한다
+    document.body.appendChild(se);
+    // 앞서 생성한 <script> 요소를 제거한다
+    document.body.removeChild(se);
+  
+    // 콜백 함수가 호출된다
+    function callback(data) {
+      document.getElementById('client-ip').textContent = data.ip;
+    }
+  </script>
+  <style>
+    #window-info [id^="w-i-"] {
+      color: #000000;
+    }
+  </style>
+  
+  <div id="window-info">
+    <div>현재 페이지의 URL: <span id="w-i-href"></span></div>
+    <div>바로 전 페이지의 URI: <span id="w-i-referrer"></span></div>
+    <div>사용자의 에이전트: <span id="w-i-userAgent"></span></div>
+    <div>사용자의 언어: <span id="w-i-language"></span></div>
+    <div>웹 브라우저 창의 폭(너비): <span id="w-i-width"></span></div>
+    <div>웹 브라우저 창의 높이: <span id="w-i-height"></span></div>
+  </div>
+  
+  
+  
+  <script>
+    document.getElementById('w-i-href').textContent = window.location.href;
+    document.getElementById('w-i-referrer').textContent = window.document.referrer;
+    document.getElementById('w-i-userAgent').textContent = window.navigator.userAgent;
+    document.getElementById('w-i-language').textContent = window.navigator.language;
+    document.getElementById('w-i-width').textContent = window.screen.width;
+    document.getElementById('w-i-height').textContent = window.screen.height;
+  </script>
+  
 
 
 
 
 
   
-  <h1 style="color:rgb(47, 47, 47); line-height:20px;" class="ce f2">Develop by<br><span class="b1" style="color:rgb(96, 96, 96);">박상현</span></h1>
+  <h1 style="color:rgb(47, 47, 47); line-height:20px;" class="ce f2">Develop by<br><span class="b1" style="color:rgb(0, 0, 0);">박상현</span></h1>
 <br><br>
-      <div class="box r1 ani" style="background-color:rgb(85, 85, 85); cursor:pointer;" onclick="popup_test()">
+      <div class="box r1 ani" style="background-color:rgb(97, 97, 97); cursor:pointer;" onclick="popup_test()">
         <h5 class="b5 ce">개발중인 사이트 입니다. 언제든 디자인이 변경될 수 있습니다.</h5>
         </h3>
       </div>
@@ -285,6 +366,11 @@
   var database = firebase.database();
   firebase.analytics();
 </script>
+<style>
+  #client-ip {
+    color: #000000;
+  }
+</style>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="firebase.js"></script>
