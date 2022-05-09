@@ -36,50 +36,187 @@
 
     </div>
   </div>
+  
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+   th, td {vertical-align:middle;}
+   button{font-family: 'Do Hyeon', sans-serif; font-size:5em; text-align: center;}
+  h1{text-align: center;}
+  tr,td{border: 1px solid #444444; border-collapse: collapse; padding: 0.5em 0.3em 0.5em 0.3em;}
+  
 
-  <span id="sel">
-    <div class="box r1 cur ani" id="L1">
-      <h3 class="name b2"><b>1 </b><span id="Or1"></span></h3>
-      <h3 class="ri enter b1 f2">입장하기 ></h3>
-    </div>
 
-    <div class="box r1 cur ani" id="L2">
-      <h3 class="name b2"><b>2 </b><span id="Or2"></span></h3>
-      <h3 class="ri enter b1 f2">입장하기 ></h3>
-    </div>
+</style>
 
-    <div class="box r1 cur ani" id="L3">
-      <h3 class="name b2"><b>3 </b><span id="Or3"></span></h3>
-      <h3 class="ri enter b1 f2">입장하기 ></h3>
-    </div>
+</head>
 
-    <div class="box r1 cur ani" id="L4">
-      <h3 class="name b2"><b>4 </b><span id="Or4"></span></h3>
-      <h3 class="ri enter b1 f2">입장하기 ></h3>
-    </div>
+<body>
 
-    <div class="box r1 ani" style="background-color:rgb(85, 85, 85);">
-      <h3 class="b5 ce">점심시간</h3>
-      </h3>
-    </div>
-    <div class="box r1 cur ani" id="L5">
-      <h3 class="name b2"><b>5 </b><span id="Or5"></span></h3>
-      <h3 class="ri enter b1 f2">입장하기 ></h3>
-    </div>
-    <div class="box r1 cur ani" id="L6">
-      <h3 class="name b2"><b>6 </b><span id="Or6"></span></h3>
-      <h3 class="ri enter b1 f2">입장하기 ></h3>
-    </div>
-    <div class="box r1 cur ani" id="L7">
-      <h3 class="name b2"><b>7 </b><span id="Or7"></span></h3>
-      <h3 class="ri enter b1 f2">입장하기 ></h3>
-    </div>
-  </span>
+    
+    
 
-  <h1 style="color:rgb(47, 47, 47); line-height:20px;" class="ce f2">Designed by<br><span class="b1" style="color:rgb(96, 96, 96);">ㅈㅁㄱ</span></h1>
+<h1>3-3 시간표</h1>
+
+
+<table style="border: 1px solid #444444; border-collapse: collapse; margin-left: auto; margin-right: auto;"> <tbody>
+<!-- #진로 a -->
+<!-- #수학 b -->
+<!-- #영어 c -->
+<!-- #체육 d -->
+<!-- #국어 e -->
+<!-- #창체 f -->
+
+<tr>
+  <th>
+    <p style="color:red;">시간표</p> 
+  </th>
+  </tr>
+<tr>
+<td><p>시간/요일</p></td>
+<td><p>월</p></td>
+<td><p>화</p></td>
+<td><p>수</p></td>
+<td><p>목</p></td>
+<td><p>금</p></td>
+</tr>
+
+<tr>
+<td><p>1</p></td>
+<td onclick="a()"><p>진로</p></td>
+<td onclick="ss()"><p>게임 프로그래밍</p></td>
+<td onclick="b()"><p>수학</p></td>
+<td onclick="ss()"><p>자료 구조</p></td>
+<td onclick="d()"><p>체육</p></td>
+</tr>
+
+<tr>
+<td><p>2</p></td>
+<td onclick="b()"><p>수학</p></td>
+<td onclick="ss()"><p>게임 프로그래밍</p></td>
+<td onclick="ss()" ><p>빅 데이터</p></td>
+<td onclick="ss()" ><p>자료 구조</p></td>
+<td onclick="e()"><p>국어</p></td>
+</tr>
+
+<tr>
+<td><p>3</p></td>
+<td onclick="ss()" ><p>응용 프로그래밍 (실습)</p></td>
+<td onclick="c()"><p>영어</p></td>
+<td onclick="ss()"><p>스마트 앱 개발</p></td>
+<td onclick="ss()"><p>자료 구조</p></td>
+<td onclick="ss()"><p>게임 프로그래밍</p></td>
+</tr>
+
+<tr>
+<td><p>4</p></td>
+<td onclick="ss()"><p>응용 프로그래밍 (실습)</p></td>
+<td onclick="ss()"><p>스마트 앱 개발</p></td>
+<td onclick="ss()"><p>스마트 앱 개발</p></td>
+<td onclick="c()"><p>영어</p></td>
+<td onclick="ss()"><p>게임 프로그래밍</p></td>
+</tr>
+
+<tr>
+<td><p>5</p></td>
+<td onclick="ss()" ><p>응용 프로그래밍 (이론)</p></td>
+<td onclick="ss()"><p>빅 데이터</p></td>
+<td onclick="ss()"><p>응용 프로그래밍</p></td>
+<td onclick="ss()" ><p>스마트 앱 개발</p></td>
+<td onclick="f()"><p>창체</p></td>
+</tr>
+
+<tr>
+<td><p>6</p></td>
+<td onclick="ss()" ><p>빅데이터</p></td>
+<td onclick="ss()" ><p>빅 데이터</p></td>
+<td onclick="ss()"><p>응용 프로그래밍</p></td>
+<td onclick="ss()" ><p>스마트 앱 개발</p></td>
+<td onclick="f()"><p>창체</p></td>
+</tr>
+
+<tr>
+<td><p>7</p></td>
+<td onclick="ss()"><p>빅데이터</p></td>
+<td onclick="e()"><p>국어</p></td>
+<td><p>&nbsp;</p></td>
+<td onclick="ss()"><p>게임 프로그래밍 (이론)</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+
+
+<tr>
+  <th>
+    <p></p>
+  </th>
+</tr>
+
+<tr>
+  <th>
+    <p style="color:red;">급식</p> 
+  </th>
+  </tr>
+
+
+<tr>
+  <td><p>시간/요일</p></td>
+  <td><p>5월달</p></td>
+  <td><p>6월달</p></td>
+  <td><p>7월달</p></td>
+  <td><p>8월달</p></td>
+  <td><p>9월달</p></td>
+  </tr>
+  
+  <tr>
+  <td><p>1학년</p></td>
+  <td onclick="zz()"><p>3번째</p></td>
+  <td onclick="zz()"><p>1번째</p></td>
+  <td onclick="zz()"><p>2번째</p></td>
+  <td onclick="zz()"><p>3번째</p></td>
+  <td onclick="zz()"><p>1번째</p></td>
+  </tr>
+
+  <tr>
+    <td><p>2학년</p></td>
+    <td onclick="zz()"><p>1번째</p></td>
+    <td onclick="zz()"><p>2번째</p></td>
+    <td onclick="zz()"><p>3번째</p></td>
+    <td onclick="zz()"><p>1번째</p></td>
+    <td onclick="zz()"><p>2번째</p></td>
+    </tr>
+
+    <tr>
+      <td><p>3학년</p></td>
+      <td onclick="zz()"><p>2번째</p></td>
+      <td onclick="zz()"><p>3번째</p></td>
+      <td onclick="zz()"><p>1번째</p></td>
+      <td onclick="zz()"><p>3번째</p></td>
+      <td onclick="zz()"><p>1번째</p></td>
+      </tr>
+
+
+</tbody>
+</table>
+
+<script type="text/javascript" src="redirect.js"></script> 
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <h1 style="color:rgb(47, 47, 47); line-height:20px;" class="ce f2">Develop by<br><span class="b1" style="color:rgb(96, 96, 96);">박상현</span></h1>
 <br><br>
       <div class="box r1 ani" style="background-color:rgb(85, 85, 85); cursor:pointer;" onclick="popup_test()">
-        <h5 class="b5 ce">제대로 창이 열리지 않는다면, 팝업이 차단되어있는지 확이해 주세요.</h5>
+        <h5 class="b5 ce">개발중인 사이트 입니다. 언제든 디자인이 변경될 수 있습니다.</h5>
         </h3>
       </div>
 
