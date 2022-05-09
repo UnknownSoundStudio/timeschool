@@ -1,16 +1,3 @@
-#hideMeAfter5Seconds {
-  animation: Err_Co 0s ease-in 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes Err_Co {
-  to {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
-}
-
 body * {
   padding: 0px;
   margin: 0px;
